@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Store</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__body">
+				<div class="header__logo">
+					<a class="header__logo-link" href="#"><img src="img/logo.svg" alt=""></a>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a href="index.html" class="menu__list-link">
+								Home
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">
+								Product list
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">
+								Contacts
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__profile profile">
+					<div class="profile__body">
+						<ul class="profile__list">
+							<li class="profile__list-item">
+								<a href="#" class="profile__list-link">
+									<img src="img/cart.svg" alt="">
+								</a>
+							</li>
+							<li class="profile__list-item">
+								<a href="#" class="profile__list-link">RU</a>
+								<span class="profile__separator"></span>
+								<a href="#" class="profile__list-link">EN</a>
+							</li>
+							<li class="profile__list-item">
+								<a href="#" class="profile__list-link">
+									<img src="img/profile.svg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="register">
+			<div class="register__body">
+				<div class="register__title">
+					<div class="register__title-item active signup">
+						<button>
+							Registration
+						</button>
+					</div>
+					<div class="register__title-item signin">
+						<button>
+							Log in
+						</button>
+					</div>
+				</div>
+				<form class="register__form signup active">
+					<div class="register__form-body">
+						<div class="register__form-input">
+							<input autocomplete="off" required spellcheck="false" type="text" class="register__name" placeholder="First name">
+							<span class="register__form-input-span fas fa-times"></span>
+							<span class="register__form-input-span fas fa-check"></span>
+						</div>
+						<div class="register__form-input">
+							<input autocomplete="off" required spellcheck="false" type="text" class="register__surname" placeholder="Last name">
+							<span class="register__form-input-span fas fa-times"></span>
+							<span class="register__form-input-span fas fa-check"></span>
+						</div>
+						<div class="register__form-input">
+							<input name="phone" autocomplete="off" required spellcheck="false" type="tel" class="register__phone" placeholder="Phone">
+							<span class="register__form-input-span fas fa-times"></span>
+							<span class="register__form-input-span fas fa-check"></span>
+						</div>
+						<div class="register__form-input">
+							<input autocomplete="off" required spellcheck="false" type="password" class="register__password" placeholder="Password">
+							<span class="register__form-input-span fas fa-times"></span>
+							<span class="register__form-input-span fas fa-check"></span>
+						</div>
+						<div class="register__form-input">
+							<input autocomplete="off" required spellcheck="false" type="password" class="register__re-password" placeholder="Password">
+							<span class="register__form-input-span fas fa-times"></span>
+							<span class="register__form-input-span fas fa-check"></span>
+						</div>
+						<div class="register__form-input">
+							<input autocomplete="off" required spellcheck="false" type="email" class="register__email" placeholder="Email">
+							<span class="register__form-input-span fas fa-times"></span>
+							<span class="register__form-input-span fas fa-check"></span>
+						</div>
+					</div>
+					<button type="submit" class="register__submit">• Sign up •</button>
+				</form>
+
+				<form class="register__form signin">
+					<div class="register__form-body">
+						<div class="register__form-input">
+							<input name="phone" autocomplete="off" spellcheck="false" type="tel" class="register__phone" placeholder="Phone">
+						</div>
+						<div class="register__form-input">
+							<input autocomplete="off" spellcheck="false" type="password" class="register__password" placeholder="Password">
+						</div>
+					</div>
+					<button type="submit" class="register__submit">• Sign in •</button>
+				</form>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__body">
+				© Internet store «Pink Pig™».
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/129ede24b4.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
