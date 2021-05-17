@@ -21,8 +21,28 @@ register?.addEventListener("click", () => {
 	}
 });
 
+let getSiblings = function (e) {
+	let siblings = [];
+	if (!e.parentNode) {
+		return siblings;
+	}
+	let sibling = e.parentNode.firstChild;
+	while (sibling) {
+		if (sibling.nodeType === 1 && sibling !== e) {
+			siblings.push(sibling);
+		}
+		sibling = sibling.nextSibling;
+	}
+	return siblings;
+};
+
 document.querySelectorAll(".category .category-item__title").forEach((item) => {
-	item.addEventListener("mouseenter", (event) =>{
-		// console.log(item.parentElement.classList.add("active"));
+	item.addEventListener("click", () => {
+		item.parentElement.classList.toggle("active");
+		getSiblings(item.parentElement).forEach((item) => {
+			item.classList.remove("active");
+		});
 	});
 });
+
+

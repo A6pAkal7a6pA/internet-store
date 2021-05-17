@@ -355,6 +355,8 @@ main {
 	flex: 1 0 auto;
 	background-color: $header_color;
 	position: relative;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 	width: 100%;
 	&__body {
 	}
@@ -381,6 +383,7 @@ main {
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 15px;
+		cursor: pointer;
 	}
 	&__name {
 	}
@@ -394,10 +397,11 @@ main {
 		left: 260px;
 		top: 0;
 		height: 100%;
-		padding: 25px;
+		padding: 25px 70px;
 		color: #fff;
 		display: none;
-		background-color: $header_color;
+		background: $header_color;
+
 	}
 	&.active {
 		.category-item__prods {
@@ -411,22 +415,24 @@ main {
 		letter-spacing: 1px;
 		line-height: 24px;
 		margin-bottom: 15px;
+		cursor: pointer;
 	}
 }
 
 .product {
 	width: 100%;
-
 	&__body {
 		width: 100%;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
 		margin: -10px 0;
+		justify-content: center;
 	}
 
 	&__item {
-		flex: 1 0 20%;
+		max-width: 350px;
+		flex: 0 1 auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -435,7 +441,11 @@ main {
 		border: 1px solid $header_color;
 		margin: 10px;
 		border-radius: 10px;
+		width: 100%;
+		color: #000;
 	}
+
+	
 
 	&__item-img {
 		max-width: 100px;
@@ -450,5 +460,19 @@ main {
 
 	&__item-price {
 		color: $header_color;
+		margin-bottom: 20px;
+	}
+
+	&__item-to-cart {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		cursor: pointer;
+	}
+
+	&__item-to-cart-img {
+		max-width: 30px;
+		margin-right: 10px;
 	}
 }
